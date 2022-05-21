@@ -1,27 +1,34 @@
-import React, { Profiler } from "react";
+import React from "react";
 import Adresse from "./component/Profil/Adresse";
 import Fullname from "./component/Profil/Fullname";
 import Profilphoto from "./component/Profil/Profilphoto";
+import Bio from "./component/Profil/Bio";
+import Profession from "./component/Profil/Profession";
+
 
 
 function App() {
+  const object={color: "blue", textAlign:'center'}
+  const handleName =()=>{ alert("")}
+
   return (
     <>
     <div>
     <div className="container">
   <div className="section-title">
     <h2>About</h2>
-    <p>
-      Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-      aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-      quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
-      sit in iste officiis commodi quidem hic quas.
-    </p>
+   <Bio bio="Je suis une Jeune tunisienne, de 27 ans,titulaire d'un diplôme en scienceinformatique,
+Passionnée par le développement web et mobile.
+Autodidacte et curieuse."/>
   </div>
   <div className="row">
-   <Profilphoto/>
+   <Profilphoto>
+   <img src="img/about.jpg" className="img-fluid" alt="" />
+   </Profilphoto>
     <div className="col-lg-8 pt-4 pt-lg-0 content">
-    <Fullname/>
+    <Fullname name="Kawther BOUKAMCHA" style={object} alert={handleName} />
+
+    <Profession profession="Developpeurse junior full stack JS"/>
       <div className="row">
        <Adresse/>
         <div className="col-lg-6">
@@ -52,6 +59,7 @@ function App() {
         Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus
         omnis culpa magni laudantium dolores.
       </p>
+    
     </div>
   </div>
 </div>

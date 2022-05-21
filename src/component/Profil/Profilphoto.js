@@ -1,9 +1,10 @@
-const Profilphoto = () => {
+const Profilphoto = (props) => {
     return ( 
 
 <>
 <div className="col-lg-4">
-      <img src="img/about.jpg" className="img-fluid" alt="" />
+
+{props.children}
     </div>
 </>
 
