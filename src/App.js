@@ -9,7 +9,8 @@ import Profession from "./component/Profil/Profession";
 
 function App() {
   const object={color: "blue", textAlign:'center'}
-  const handleName =()=>{ alert("")}
+  
+  const handleName =(name)=>{alert(name)}
 
   return (
     <>
@@ -26,7 +27,7 @@ Autodidacte et curieuse."/>
    <img src="img/about.jpg" className="img-fluid" alt="" />
    </Profilphoto>
     <div className="col-lg-8 pt-4 pt-lg-0 content">
-    <Fullname name="Kawther BOUKAMCHA" style={object} alert={handleName} />
+    <Fullname name="Kawther BOUKAMCHA" style={object} alertme={handleName} />
 
     <Profession profession="Developpeurse junior full stack JS"/>
       <div className="row">

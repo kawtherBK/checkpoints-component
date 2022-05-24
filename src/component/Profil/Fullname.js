@@ -1,11 +1,11 @@
 import React from 'react'
 import PropsTypes from 'prop-types'
 
-const Fullname = (props,style,alert) => {
+const Fullname = ({alertme,style,name}) => {
     return ( 
         <div >
-          <h3>{props.name}</h3>
-       {alert(props.name)}
+          <h3>{name}</h3>
+       {alertme(name)}
       <p className="fst-italic" style={style}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
